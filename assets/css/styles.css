@@ -38,6 +38,12 @@ h1 {
   font-size: 3em;
 }
 
+button, input, .btn, a.btn {
+  -webkit-font-smoothing: antialiased; /*sexy text*/
+  text-rendering: optimizelegibility;
+  color: white;
+}
+
 .btn {
   font-weight: bold;
 }
@@ -45,6 +51,10 @@ h1 {
 .btn-danger {
   background-color: var(--salmon);
   border-collapse: #d95131;
+}
+
+img {
+  max-width: 100%;
 }
 
 /***GLOBAL***/
@@ -110,4 +120,24 @@ h1 {
   color: white;
   font-weight: bold;
   display: block;
+}
+
+/***LAYOUT***/
+
+#opt-in {
+  background: var(--blueGray);
+  padding: 20px 0;
+  color: white;
+  -webkit-font-smoothing: antialiased; /*sexy text*/
+  text-rendering: optimizelegibility;
+  font-size: 1.2em;
+}
+
+#opt-in p {
+  margin: 7px 0 0 0;
+  font-size: 20px;
+}
+
+#opt-in button:focus {
+  outline: 0;
 }

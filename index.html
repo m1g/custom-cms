@@ -55,7 +55,7 @@
 
   <!-- HERO
   ======================================================================== -->
-  <section id="hero">
+  <section id="hero" data-type="background" data-speed="5">
     <article>
       <div class="container clearfix">
         <div class="row">
@@ -89,9 +89,20 @@
 
   <!-- OPT IN SECTION
   ======================================================================== -->
-  <section>
-
-  </section>
+  <section id="opt-in">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <p class="lead">
+            <strong>Subscribe to our mailing list.</strong> We'll send something special as a thank you.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#theModal">Click here to subscribe</button>
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </section> <!-- opt-in -->
 
   <!-- BOOST YOUR INCOME
   ======================================================================== -->
@@ -149,15 +160,42 @@
 
   <!-- MODAL
   ======================================================================== -->
-  <div>
-
-  </div>
+  <div class="modal fade" id="theModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
+          <h4 class="modal-title" id="theModalLabel"><i class="fa fa-envelope"></i>Subscribe to our mailing list</h4>
+        </div><!-- modal-header -->
+        <div class="modal-body">
+          <p>Simply enter your name and email! As a thank you for joining us, we're going to give you one of our best selling courses, <em>for free!</em></p>
+          <form action="" class="form-inline" role="form">
+            <div class="form-group">
+              <label for="subscribe-name" class="sr-only">Your first name</label>
+              <input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">
+            </div>
+            <div class="form-group">
+              <label for="subscribe-email" class="sr-only">and your email</label>
+              <input type="text" class="form-control" id="subscribe-email" placeholder="and your email">
+            </div>
+            <input type="submit" class="btn btn-danger" value="Subscribe!">
+          </form>
+          <hr>
+          <p><small>By providing your email you consent to receiving occasional promotional emails &amp; newsletters. <br>No Spam. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time.</small></p>
+        </div><!-- modal-body -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal-dialog -->
+  </div> <!-- modal -->
 
   <!-- BOOTSTRAP CORE JAVASCRIPT
         ** placed at the end of the document so the pages load faster **
   ======================================================================== -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
