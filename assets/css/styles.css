@@ -57,7 +57,53 @@ img {
   max-width: 100%;
 }
 
-/***GLOBAL***/
+.modal-content {
+  background: url('../img/tile.jpg') top left repeat;
+}
+
+.badge.social {
+  background: #ccc;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  margin: 0 5px 20px 0;
+  padding: 0;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.badge.social.twitter:hover {
+  background-color: #55acee;
+}
+
+.badge.social.instagram:hover {
+  background-color: #3b5998;
+}
+
+.badge.social.linkedin:hover {
+  background-color: #db4b39;
+}
+
+blockquote {
+  padding: 0;
+  border: none;
+  font-style: italic;
+  text-align: left;
+}
+
+blockquote cite {
+  display: block;
+  color: #777;
+  margin: 15px 0 0 0;
+}
+
+blockquote::before {
+  display: none;
+}
+
+/***HERO***/
 
 #hero {
   background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
@@ -181,6 +227,48 @@ section h3 {
 
 #instructor {
   background: #fff url('../img/brad-elvis.png') 90% -10px no-repeat;
+}
+
+#instructor h2 {
+  margin: 0 0 20px;
+}
+
+#instructor .num {
+  display: table;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 24px;
+  height: 140px;
+  width: 140px;
+  text-align: center;
+  background: var(--salmon);
+  border-radius: 100%;
+  -webkit-font-smoothing: antialiased; /*sexy text*/
+  text-rendering: optimizelegibility;
+}
+
+#instructor .num .num-content {
+  display: table-cell; /* table-cell and table for parent allow v-align */
+  vertical-align: middle;
+}
+
+#instructor .num span {
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#kudos {
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 60px;
+}
+
+.testimonial img {
+  border-radius: 50%;
 }
 
 /***CUSTOM SPRITES***/
