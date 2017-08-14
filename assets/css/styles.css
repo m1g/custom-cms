@@ -38,6 +38,23 @@ h1 {
   font-size: 3em;
 }
 
+p {
+  margin: 0 0 15px;
+}
+
+p.lead {
+  font-weight: normal;
+}
+
+a:link, a:visited {
+  color: var(--salmon);
+}
+
+a:hover {
+  text-decoration: none;
+  color: #c9302c;
+}
+
 button, input, .btn, a.btn {
   -webkit-font-smoothing: antialiased; /*sexy text*/
   text-rendering: optimizelegibility;
@@ -48,9 +65,23 @@ button, input, .btn, a.btn {
   font-weight: bold;
 }
 
+.btn:focus {
+  outline: 0;
+}
+
 .btn-danger {
-  background-color: var(--salmon);
+  background: var(--salmon);
   border-collapse: #d95131;
+}
+
+.btn-success {
+  background: var(--green);
+  border: none;
+}
+
+.btn-success:hover {
+  background: #6a9b3d;
+  border-color: #6a9b3d;
 }
 
 img {
@@ -170,6 +201,10 @@ blockquote::before {
 
 /***LAYOUT***/
 
+.row + .row { /* combo style: element with class row IMMEDIATELY after a class of row */
+  margin-top: 20px;
+}
+
 section {
   padding: 80px 0;
 }
@@ -271,6 +306,54 @@ section h3 {
   border-radius: 50%;
 }
 
+#signup {
+  text-align: center;
+  background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+  background-size: cover;
+  color: white;
+  padding: 140px 0;
+}
+
+#signup h2 {
+  font-weight: normal;
+}
+
+#signup h2 strong {
+  border-bottom: solid 2px var(--salmon);
+}
+
+#signup .btn {
+  font-size: 24px;
+}
+
+footer {
+  background: var(--blueGray);
+  color: #fff;
+  padding: 20px 0 10px;
+  font-size: 12px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a:link, footer a:visited {
+  color: #fff;
+}
+
+footer a:hover {
+  color: var(--salmon);
+}
+
+footer li.signup-link a {
+  color: var(--salmon);
+}
+
+footer li.signup-link a:hover {
+  font-weight: bold;
+}
+
+
 /***CUSTOM SPRITES***/
 
 i.ci {
@@ -286,3 +369,39 @@ i.ci {
 .ci.ci-community    { background-position: -120px 0; }
 .ci.ci-instructor   { background-position: -160px 0; }
 .ci.ci-device       { background-position: -200px 0; }
+
+
+/***MEDIA QUERIES***/
+
+@media screen and (max-width: 991px) {
+  #instructor .container {
+    background: rgba(255, 255, 255, 0.8);
+    padding:
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 50%;
+  }
+
+  #optin p {
+    margin: 0 0 10px;
+  }
+
+  #featurette iframe {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  #instructor .num {
+    height: 100px;
+    width: 100px;
+    font-size: 22px;
+  }
+
+  #instructor .num span {
+    font-size: 16px;
+  }
+}
